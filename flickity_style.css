@@ -1,0 +1,154 @@
+/* external css: flickity.css */
+
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  /*width: 28%;*/
+  width: 12%;
+  height: 56px;
+  margin-right: 10px;
+  /*background: #8C8;*/
+  background: #addbae;
+  counter-increment: gallery-cell;
+}
+
+.flickity-prev-next-button {
+/*    opacity: 0;*/
+}
+.flickity-prev-next-button:disabled {
+ /*   opacity: 0;*/
+}
+
+.gallery-cell.is-selected {
+  /*background: #ED2;*/
+  background: #29b49f;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(gallery-cell);*/
+  line-height: 100px;
+  font-size: 65px;
+  color: white;
+}
+
+
+
+/* Newly Added */
+
+.flickity-slider li {
+    list-style-type: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.js-flickity {
+    margin-top: 5px;
+}
+
+#getDates .flickity-viewport {
+    margin-bottom: 15px;
+}
+
+
+.flickity-slider ul {
+    margin: 5px 0;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.flickity-slider li:nth-child(2) {
+    color: white;
+    font-size: 18px;
+}
+
+
+  div#getMts {
+    margin-top: 1em;
+}
+
+#getHrs .gallery-cell, #getMts .gallery-cell{
+  height: 53px;
+}
+
+#getMts li:nth-child(1) {
+  font-size: 10px;
+}
+
+.projectItem h5 {
+    color: #68686a;
+    margin: 7px 0;
+}
+
+
+/* Later add it in main.css android & ios */
+.projectItem ul.projectLine {
+  padding-top: 1em;
+}
+
+.gallery-cell:not(.is-selected){
+  opacity: 0.6;
+}
+
+.project-dropdown {
+  background-color: #29b49f;
+}
+
+.project-dropdown .projectName {
+  background-color: #29b49f;
+}
+
+.selectedProjectOption {
+    padding-left: 10px;
+    color: #fff;
+}
+
+.projectItem {
+    margin: 0 10% 0 11%;
+}
+
+.flickity-prev-next-button.previous {
+    left: -40px;
+    top: 30px;
+}
+
+.flickity-prev-next-button:hover {
+    background: transparent;
+}
+
+.flickity-prev-next-button.next {
+    right: -37px;
+    top: 30px;    
+}
+
+
+@media screen and (max-width: 599px) and (min-width: 400px) {
+.time-entry .container {
+    width: 400px;
+    margin: 0 7px;
+}
+}
+
+/* Additional css without server */
+
+.loader {
+  display: none;
+}
+
+.tabbed-wrapper {
+  display: block;
+}
+
+#calendarView {
+   display: none;
+}
+
+.faq-wrapper {
+  display: none;
+}
